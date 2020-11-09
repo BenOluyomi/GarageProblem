@@ -1,11 +1,11 @@
 package Classes;
 
-public class Colour extends Vehicle{
+public class Truck extends Vehicle{
 	//NEW ATTRIBUTE
 	String colour;
 	
 	//CONSTRUCTOR
-	public Colour(boolean isAuto, int wheelNum, String make, int releaseYear, String condition, String colour){
+	public Truck(boolean isAuto, int wheelNum, String make, String colour){
 		//INHERITANCE
 		super(isAuto, wheelNum, make);
 		this.isAuto = isAuto;
@@ -23,8 +23,7 @@ public class Colour extends Vehicle{
 		}
 			
 		
-		public void Method(boolean isAuto, int wheelNum, String make, int releaseYear, String condition, boolean canSalvage) {
-			this.isAuto = isAuto;
+		public void Method(boolean isAuto, int wheelNum, String make, String colour) {
 			this.isAuto = isAuto;
 			this.wheelNum = wheelNum;
 			this.make = make;

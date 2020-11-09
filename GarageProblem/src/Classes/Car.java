@@ -1,9 +1,9 @@
 package Classes;
 
-public class Automatic extends Vehicle{
+public class Car extends Vehicle{
 	//NEW ATTRIBUTE
 	int releaseYear;
-	public Automatic(boolean isAuto, int wheelNum, String make, int releaseYear){
+	public Car(boolean isAuto, int wheelNum, String make, int releaseYear){
 		//INHERITANCE
 		super(isAuto, wheelNum, make);
 		this.isAuto = isAuto;

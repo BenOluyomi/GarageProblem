@@ -1,15 +1,15 @@
 package Classes;
 
-public class Condition extends Vehicle{
+public class Motorbike extends Vehicle{
 	//NEW ATTRIBUTE
 	String condition;
 	boolean canSalvage;
 	//CONSTRUCTOR
-	public Condition(boolean isAuto, int wheelNum, String make, int releaseYear, String condition, boolean canSalvage){
+	public Motorbike(boolean isAuto, int wheelNum, String make, String condition, boolean canSalvage){
 		//INHERITANCE
 		super(isAuto, wheelNum, make);
 		this.isAuto = isAuto;
-		this.wheelNum = wheelNum;
+		this.wheelNum = 2;
 		this.make = make;
 		this.condition = condition;
 		this.canSalvage = canSalvage;
@@ -28,9 +28,9 @@ public class Condition extends Vehicle{
 		}
 		
 		
-		public void Method(boolean isAuto, int wheelNum, String make, int releaseYear, String condition, boolean canSalvage) {
+		public void Method(boolean isAuto, int wheelNum, String make, String condition, boolean canSalvage) {
 			this.isAuto = isAuto;
-			this.wheelNum = wheelNum;
+			this.wheelNum = 2;
 			this.make = make;
 			this.condition = condition;
 			this.canSalvage = canSalvage;
