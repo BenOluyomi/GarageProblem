@@ -3,16 +3,20 @@ package Classes;
 public class Car extends Vehicle{
 	//NEW ATTRIBUTE
 	int releaseYear;
+	
+	
+	//CONSTRUCTOR
 	public Car(boolean isAuto, int wheelNum, String make, int releaseYear){
 		//INHERITANCE
 		super(isAuto, wheelNum, make);
+		
 		this.isAuto = isAuto;
 		this.wheelNum = wheelNum;
 		this.make = make;
 		this.releaseYear= releaseYear;
 	}
 	
-		//CONSTRUCTOR
+		
 		
 		//METHODS
 		public int getYear() {
