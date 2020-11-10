@@ -58,7 +58,7 @@ public class Garage {
 	}
 	
 	
-	
+	//CALUCLATE THE COST FOR EACH VEHICLE IN THE LIST
 	public void fixCost(int cost) {
 		for(Vehicle handle: vehicleList)	{
 		if(handle.getWheel() ==2) {
