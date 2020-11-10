@@ -9,7 +9,7 @@ public class Runner {
 		g.vehicleNames();
 		
 		//RETRIEVE THE COST OF REPAIRS FOR ALL VEHICLES *(based on whether its a motorbike,car,automatic etc.)
-		g.fixCost(0);
+		g.fixCost();
 	}
 
 }
