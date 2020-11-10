@@ -68,7 +68,7 @@ public class Garage {
 		} else {
 			cost = 300;
 		}
-		System.out.println(handle.getMake()+ " will cost "+cost+" to repair.");
+		System.out.println(handle.getMake()+ " will cost £"+cost+" to repair.");
 		}
 		
 		
