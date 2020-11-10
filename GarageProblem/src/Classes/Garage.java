@@ -5,27 +5,30 @@ import java.util.ArrayList;
 public class Garage {
 	// ATTRIBUTES
 
-	protected String location;
+	//protected String location;
 	protected int cost;
 	protected ArrayList<Vehicle> vehicleList = new ArrayList<>();
 	
 	// VEHICLES
 	public Garage(String location, int cost, Vehicle vehicle) {
-	this.location = location;
+	//this.location = location;
 	this.cost = cost;	
 	
 	Vehicle fiesta = new Car(true, 4, "Ford Fiesta Car", 1976);
 	Vehicle dodge = new Truck(false, 4, "Dodge RAM 2500 Truck", "Blue");
-	Vehicle Yamaha = new Motorbike(true, 2, "Yamaha Bike", "broken exhaust", true);
-	// Car Lamborghini= new Car(false, 4, "Lamborghini Jalpa",1981);//
-	// Truck landRover= new Truck(false, 4, "Land Rover Defender","Black");//
-	// Motorbike Triumph= new Motorbike(true, 2, "XSR 900","Crushed
-	// Engine",false);//
-	// Car Merc = new Car(true, 4, "Mercedes A-Class",1997);//
+	Vehicle yamaha = new Motorbike(true, 2, "Yamaha Bike", "broken exhaust", true);
+	Car lamborghini= new Car(false, 4, "Lamborghini Jalpa Car",1981);//
+	Truck landRover= new Truck(false, 4, "Land Rover Defender Truck","Black");//
+	Motorbike triumph= new Motorbike(true, 2, "XSR 900 Bike","Crushed Engine",false);//
+	Car merc = new Car(true, 4, "Mercedes A-Class Car",1997);//
 	
 	vehicleList.add(fiesta);
 	vehicleList.add(dodge);
-	vehicleList.add(Yamaha);
+	vehicleList.add(yamaha);
+	vehicleList.add(lamborghini);
+	vehicleList.add(landRover);
+	vehicleList.add(triumph);
+	vehicleList.add(merc);
 	
 	}
 	
@@ -49,12 +52,14 @@ public class Garage {
 	public void vehicleNames() {
 	for(Vehicle handle: vehicleList)	{
 		
-			System.out.println(handle.getMake());
+			System.out.println("Vehicle is a"+handle.toString()+" Subclass "+handle.getMake()+" with "+handle.getWheel()+" wheels.");
 		
 	}
 	}
 	
-	public int fixCost(int cost) {
+	
+	
+	public void fixCost(int cost) {
 		for(Vehicle handle: vehicleList)	{
 		if(handle.getWheel() ==2) {
 			cost = 200;
@@ -63,10 +68,10 @@ public class Garage {
 		} else {
 			cost = 300;
 		}
-		System.out.println(cost);
+		System.out.println(handle.getMake()+ " will cost "+cost+" to repair.");
 		}
 		
-		return cost;
+		
 		
 		
 		
